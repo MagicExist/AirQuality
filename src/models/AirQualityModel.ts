@@ -1,6 +1,6 @@
 import { AirQualityData, City } from './types';
 
-const BASE_URL = 'https://air-quality-api.open-meteo.com/v1/airquality';
+const BASE_URL = 'https://air-quality-api.open-meteo.com/v1/air-quality';
 
 export async function fetchAirQuality(
   city: City,
