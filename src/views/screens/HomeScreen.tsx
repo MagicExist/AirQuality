@@ -119,11 +119,11 @@ export default function HomeScreen() {
                   setShowDatePicker(false);
                 }
               }}
-              selectedItemColor="#4361ee"
-              headerButtonColor="#4361ee"
-              headerTextStyle={styles.pickerHeaderText}
-              dayTextStyle={styles.pickerDayText}
-              selectedTextStyle={styles.pickerSelectedText}
+              styles={{
+                selected: { backgroundColor: '#4361ee', borderRadius: 8 },
+                selected_label: { color: '#fff', fontWeight: '700' },
+                today: { borderWidth: 1, borderColor: '#4361ee', borderRadius: 8 },
+              }}
             />
           </View>
         </Modal>
@@ -294,22 +294,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '700',
     color: '#4361ee',
-  },
-
-  // DateTimePicker text styles
-  pickerHeaderText: {
-    fontSize: 15,
-    fontWeight: '700',
-    color: '#1a1a2e',
-  },
-  pickerDayText: {
-    fontSize: 14,
-    color: '#1a1a2e',
-  },
-  pickerSelectedText: {
-    fontSize: 14,
-    fontWeight: '700',
-    color: '#fff',
   },
 
   // Error banner
